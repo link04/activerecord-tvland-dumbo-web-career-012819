@@ -10,4 +10,8 @@ class Character < ActiveRecord::Base
     Show.create(show)
   end
   
+  def build_show(show)
+    Show.create(show)
+  end
+  
 end
