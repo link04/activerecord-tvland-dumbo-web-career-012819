@@ -1,5 +1,5 @@
 class Actor < ActiveRecord::Base
-  belongs_to :characters
+  has_many :characters
   has_many :shows, trough: :characters
   
   def full_name
@@ -7,7 +7,7 @@ class Actor < ActiveRecord::Base
   end
   
   def list_roles
-    
+    self.
   end
   
 end
