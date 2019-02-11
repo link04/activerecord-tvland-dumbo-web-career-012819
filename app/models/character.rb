@@ -7,7 +7,7 @@ class Character < ActiveRecord::Base
   end
   
   def .build_network(network)
-    Show.create(show)
+    Network.create(show)
   end
   
   def build_show(show)
